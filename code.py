@@ -62,8 +62,9 @@ def run(json_data, start_key, start_key2, addon, addon2, skip, game_pre, display
                         f"1:  {Fore.GREEN}Custom Skyboxes{Style.RESET_ALL}\n"
                         f"2:  {Fore.GREEN}Hitmarker Tweaks{Style.RESET_ALL}\n"
                         f"3:  {Fore.GREEN}Gun Sounds{Style.RESET_ALL}\n"
+                        f"4:  {Fore.GREEN}CLIENT avatar tweaks{Style.RESET_ALL}\n"
                         f"Type 'back' to return to the previous menu.\n: ",
-                        valid_values=[0, 1, 2, 3]
+                        valid_values=[0, 1, 2, 3, 4]
         )
         if options == 'back':
             print(f"{Fore.CYAN}\nReturning to main menu.{Style.RESET_ALL}")
@@ -124,6 +125,32 @@ def run(json_data, start_key, start_key2, addon, addon2, skip, game_pre, display
                 case 3:
                     start_key = "guns"
                     start_key2 = "replacement sounds"
-                    return json_data, start_key, start_key2, addon, addon2, skip, game_pre, display_names                
+                    return json_data, start_key, start_key2, addon, addon2, skip, game_pre, display_names
+                case 4:
+                    while True:
+                        sky_option = get_valid_input(
+                            f"\nPick which item you want to change\n"
+                            f"1: {Fore.GREEN}Stevie Standard > Headless{Style.RESET_ALL}\n"
+                            f"2: {Fore.GREEN}International France Fedora > SKOTN{Style.RESET_ALL}\n"
+                            f"Type 'back' to return to the previous menu.\n: ",
+                            valid_values=[1, 2]
+                        )
+
+                        if sky_option == 'back':
+                            print(f"\n{Fore.CYAN}\nReturning to Asset replacements.{Style.RESET_ALL}")
+                            break
+
+                        match sky_option:
+                            case 1:
+                                addon = "0111487c7d3044bec56587c86740c9ce"
+                                addon2 = "75205be5a167842c7ed931d9d5a904ca"
+                                return json_data, start_key, start_key2, addon, addon2, skip, game_pre, display_names
+                            case 2:
+                                addon = "7ce2ac6c1ed6d340767e00fe02f529f6"
+                                addon2 = "b96f172467aa810b20bc5a99eba858e5"
+                                push(json_data, start_key, start_key2, addon, addon2, skip, game_pre, display_names)
+                                addon = "59cccb6d405a32f9a1d48ac20ec23fd2"
+                                addon2 = "9d5876394f908ec23b2d54dfb424059b"
+                                return json_data, start_key, start_key2, addon, addon2, skip, game_pre, display_names                    
         except Exception as e:
             print(f"{Fore.RED}An error occurred: {e}{Style.RESET_ALL}")
