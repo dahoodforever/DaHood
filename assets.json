@@ -1,14 +1,26 @@
 {
     "Dahood": {
         "guns": {
-            "db": "86b05c011cc907aca2d97f6cace820c7 ",
+            "flintlock": "e4aa77b159d974387168d95a17678504",
+            "ar": "d234739eb5cf47b34a027d0eb53565e1",
+            "ak47": "d234739eb5cf47b34a027d0eb53565e1",
+            "silencer": "cd7e034251f053a2c88212de014a4de5",
+            "rifle": "b30428092ec7d29505312b18e194d80f",
+            "db": "86b05c011cc907aca2d97f6cace820c7",
             "tac": "1ca7c8d74533abaa3e38c34ab06b7918",
-            "revolver": "1379608cf9115d839fd895da87efb2bd"
+            "revolver": "1379608cf9115d839fd895da87efb2bd",
+            "shotgun": "9923b5d612a32f60488627057d881129",
+            "smg": "8e4ba6a63b35e41bd197bca46f57f900",
+            "p90": "8e4ba6a63b35e41bd197bca46f57f900",
+            "glock": "1af58cc6ca799169c0973b32f2743782",
+            "aug": "0ceb9b08571165679d28fd22b61e1f71",
+            "granade launcher": "412dc1d6a6e488aa8c8ff11342c54fe0"
         },
         "dahood hits": {
             "dahood hit sound": "74423d850b9127d1296d17c49af15828",
             "shield icon": "8c03924bbb14a47a4be0de64b287e053"
         },
+        "eating sound": "83372cb750a0c99d934d5b65930bf7c2",
         "skyboxes": [
             "9b1fcebe12d8a11ae8423c28bc208347",
             "86e5449d3e114dbf31837b639f8afa7f",
