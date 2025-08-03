@@ -63,7 +63,8 @@ def run(json_data, start_key, start_key2, addon, addon2, skip, game_pre, display
                         f"3:  {Fore.GREEN}Gun Sounds{Style.RESET_ALL}\n"
                         f"4:  {Fore.GREEN}CLIENT avatar tweaks{Style.RESET_ALL}\n"
                         f"5:  {Fore.GREEN}eating sound{Style.RESET_ALL}\n"
-                        f"{Fore.CYAN}</> : if u paid for this u got scammed lolol loser{Style.RESET_ALL}\n"
+                        f"{Fore.MAGENTA}</> : if ur selling this find a job{Style.RESET_ALL}\n"
+                        f"{Fore.BLUE}</> : if you bought this ur a retard and got scammed{Style.RESET_ALL}\n"
                         f"Type 'back' to return to the previous menu.\n: ",
                         valid_values=[0, 1, 2, 3, 4, 5 ]
         )
